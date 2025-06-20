@@ -7,7 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+// Permitir solicitudes desde cualquier origen (útil para desarrollo)
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/pabellones")
 public class PabellonController {
